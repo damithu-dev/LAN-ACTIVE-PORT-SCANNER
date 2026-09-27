@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LANScannerReport><Host ip="192.168.1.100" totalScanned="100" durationSec="1.45"><OpenPorts><Port number="22" status="OPEN" latencyMs="1.2" /><Port number="80" status="OPEN" latencyMs="0.8" /><Port number="443" status="OPEN" latencyMs="1.5" /></OpenPorts></Host></LANScannerReport>
