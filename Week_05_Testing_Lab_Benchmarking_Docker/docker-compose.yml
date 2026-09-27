@@ -1,0 +1,51 @@
+version: '3.8'
+
+networks:
+  scanner_lab_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.28.0.0/16
+
+services:
+  lab_nginx:
+    image: nginx:alpine
+    container_name: lab_nginx
+    networks:
+      scanner_lab_net:
+        ipv4_address: 172.28.0.10
+    ports:
+      - "8080:80"
+
+  lab_redis:
+    image: redis:alpine
+    container_name: lab_redis
+    networks:
+      scanner_lab_net:
+        ipv4_address: 172.28.0.20
+    ports:
+      - "6379:6379"
+
+  lab_postgres:
+    image: postgres:alpine
+    container_name: lab_postgres
+    environment:
+      POSTGRES_PASSWORD: labpassword123
+      POSTGRES_DB: labdb
+    networks:
+      scanner_lab_net:
+        ipv4_address: 172.28.0.30
+    ports:
+      - "5432:5432"
+
+  lab_ftp:
+    image: fauria/vsftpd
+    container_name: lab_ftp
+    environment:
+      FTP_USER: testuser
+      FTP_PASS: testpass
+    networks:
+      scanner_lab_net:
+        ipv4_address: 172.28.0.40
+    ports:
+      - "2121:21"
