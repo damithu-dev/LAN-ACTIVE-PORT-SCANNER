@@ -1,0 +1,47 @@
+[
+  {
+    "cve_id": "CVE-2021-41773",
+    "software": "Apache HTTPD",
+    "affected_versions": ["2.4.49"],
+    "cvss_score": 7.5,
+    "severity": "HIGH",
+    "description": "Path traversal and remote code execution vulnerability in Apache HTTP Server 2.4.49.",
+    "remediation": "Upgrade Apache HTTP Server to version 2.4.51 or later."
+  },
+  {
+    "cve_id": "CVE-2021-42013",
+    "software": "Apache HTTPD",
+    "affected_versions": ["2.4.50"],
+    "cvss_score": 9.8,
+    "severity": "CRITICAL",
+    "description": "Incomplete fix for CVE-2021-41773 allowing remote code execution and path traversal.",
+    "remediation": "Upgrade immediately to Apache HTTP Server 2.4.51 or higher."
+  },
+  {
+    "cve_id": "CVE-2018-15473",
+    "software": "OpenSSH",
+    "affected_versions": ["7.4p1", "7.5p1", "7.6p1", "7.7p1"],
+    "cvss_score": 5.3,
+    "severity": "MEDIUM",
+    "description": "OpenSSH user enumeration vulnerability via malformed authentication packets.",
+    "remediation": "Upgrade to OpenSSH 7.8p1 or newer."
+  },
+  {
+    "cve_id": "CVE-2011-2523",
+    "software": "vsftpd",
+    "affected_versions": ["2.3.4"],
+    "cvss_score": 9.8,
+    "severity": "CRITICAL",
+    "description": "Backdoor command execution vulnerability in vsftpd 2.3.4 downloadable archive.",
+    "remediation": "Purge vsftpd 2.3.4 and install official vsftpd 3.0.3+ from distribution repositories."
+  },
+  {
+    "cve_id": "CVE-2022-0543",
+    "software": "Redis",
+    "affected_versions": ["5.0.7", "6.0.15"],
+    "cvss_score": 10.0,
+    "severity": "CRITICAL",
+    "description": "Lua sandbox escape in Debian-packaged Redis leading to remote code execution.",
+    "remediation": "Upgrade Redis package and enable protected-mode."
+  }
+]
