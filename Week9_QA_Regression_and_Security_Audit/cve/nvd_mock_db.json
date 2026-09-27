@@ -1,0 +1,53 @@
+{
+  "_description": "Offline NVD-style vulnerability dictionary keyed by service name + version range. Small mock subset for local dev/QA only. In a production build this would be refreshed from the real NVD JSON feeds, but that is outside this project's local test-lab scope.",
+  "entries": [
+    {
+      "service": "OpenSSH",
+      "version": "7.2p2",
+      "cve_id": "CVE-2018-15473",
+      "cvss_score": 5.3,
+      "severity": "MEDIUM",
+      "summary": "Username enumeration via crafted authentication packets."
+    },
+    {
+      "service": "Apache httpd",
+      "version": "2.4.29",
+      "cve_id": "CVE-2019-0211",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "summary": "Local privilege escalation via scoreboard manipulation in the MPM worker/event modules."
+    },
+    {
+      "service": "ProFTPD",
+      "version": "1.3.5",
+      "cve_id": "CVE-2015-3306",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "summary": "mod_copy allows unauthenticated remote arbitrary file copy."
+    },
+    {
+      "service": "nginx",
+      "version": "1.14.0",
+      "cve_id": "CVE-2019-9511",
+      "cvss_score": 7.5,
+      "severity": "HIGH",
+      "summary": "HTTP/2 flood ('Data Dribble') can exhaust CPU resources (DoS)."
+    },
+    {
+      "service": "Microsoft IIS",
+      "version": "6.0",
+      "cve_id": "CVE-2017-7269",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "summary": "Buffer overflow in the WebDAV service (ScStoragePathFromUrl) allows remote code execution."
+    },
+    {
+      "service": "vsftpd",
+      "version": "2.3.4",
+      "cve_id": "CVE-2011-2523",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "summary": "Backdoor command execution triggered by a crafted username string."
+    }
+  ]
+}
