@@ -1,0 +1,53 @@
+{
+  "_description": "Mock service-banner dataset used to benchmark the offline CVE lookup engine. Every entry is a synthetic/lab banner string paired with the CVE ID it should resolve to. This is NOT live internet data — it is a fixture for local QA testing per the project's Safety & Authorization Boundaries policy.",
+  "test_cases": [
+    {
+      "banner": "SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.10",
+      "expected_service": "OpenSSH",
+      "expected_version": "7.2p2",
+      "expected_cve": "CVE-2018-15473"
+    },
+    {
+      "banner": "Server: Apache/2.4.29 (Ubuntu)",
+      "expected_service": "Apache httpd",
+      "expected_version": "2.4.29",
+      "expected_cve": "CVE-2019-0211"
+    },
+    {
+      "banner": "220 ProFTPD 1.3.5 Server ready",
+      "expected_service": "ProFTPD",
+      "expected_version": "1.3.5",
+      "expected_cve": "CVE-2015-3306"
+    },
+    {
+      "banner": "Server: nginx/1.14.0 (Ubuntu)",
+      "expected_service": "nginx",
+      "expected_version": "1.14.0",
+      "expected_cve": "CVE-2019-9511"
+    },
+    {
+      "banner": "SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.4",
+      "expected_service": "OpenSSH",
+      "expected_version": "8.9p1",
+      "expected_cve": null
+    },
+    {
+      "banner": "Server: Microsoft-IIS/6.0",
+      "expected_service": "Microsoft IIS",
+      "expected_version": "6.0",
+      "expected_cve": "CVE-2017-7269"
+    },
+    {
+      "banner": "220 (vsFTPd 2.3.4)",
+      "expected_service": "vsftpd",
+      "expected_version": "2.3.4",
+      "expected_cve": "CVE-2011-2523"
+    },
+    {
+      "banner": "Server: nginx/1.24.0",
+      "expected_service": "nginx",
+      "expected_version": "1.24.0",
+      "expected_cve": null
+    }
+  ]
+}
