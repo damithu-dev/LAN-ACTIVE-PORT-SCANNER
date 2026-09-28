@@ -1,0 +1,4 @@
+Host,Port,Status,Latency_ms,Service,Version
+192.168.1.100,22,OPEN,1.2,OpenSSH,8.9p1
+192.168.1.100,80,OPEN,0.8,Nginx,1.18.0
+192.168.1.100,443,OPEN,1.5,Nginx,1.18.0

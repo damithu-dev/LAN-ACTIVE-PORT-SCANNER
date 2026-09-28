@@ -1,0 +1,31 @@
+{
+    "host": "192.168.1.100",
+    "total_scanned": 100,
+    "open_count": 3,
+    "closed_count": 97,
+    "filtered_count": 0,
+    "duration_seconds": 1.45,
+    "open_ports": [
+        {
+            "port": 22,
+            "status": "OPEN",
+            "latency_ms": 1.2,
+            "service": "OpenSSH",
+            "version": "8.9p1"
+        },
+        {
+            "port": 80,
+            "status": "OPEN",
+            "latency_ms": 0.8,
+            "service": "Nginx",
+            "version": "1.18.0"
+        },
+        {
+            "port": 443,
+            "status": "OPEN",
+            "latency_ms": 1.5,
+            "service": "Nginx",
+            "version": "1.18.0"
+        }
+    ]
+}
